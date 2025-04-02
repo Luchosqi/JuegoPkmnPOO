@@ -7,10 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestorArchivo {
+    private final String PATH = "file/pkmn.csv";
 
-    public static List<String[]> crearLista() {
+    public  List<String[]> crearLista() {
         try {
-            CSVReader reader = new CSVReaderBuilder(new FileReader("file/pkmn.csv")).build();
+            CSVReader reader = new CSVReaderBuilder(new FileReader(PATH)).build();
             String[] nextLine;
             List<String[]> lineas = new ArrayList();
             while ((nextLine = reader.readNext()) != null) {
