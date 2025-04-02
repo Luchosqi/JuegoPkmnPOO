@@ -25,4 +25,5 @@ public class Entrenador {
         
         return equipo;
     }
+
 }

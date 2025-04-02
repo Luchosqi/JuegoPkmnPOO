@@ -27,7 +27,7 @@ public class Main {
             int generacion = Integer.parseInt(lineas2.get(i)[11]);
             boolean legendario = Boolean.parseBoolean(lineas2.get(i)[12]);
             int vidacompletaHP = Integer.parseInt(lineas2.get(i)[5]);
-            Pokemon pokemon = new Pokemon(numero, nombre, tipo1, tipo2, total, hp, ataque, defensa, velocidad, generacion, legendario, vidacompletaHP);
+            Pokemon pokemon = new Pokemon(numero, nombre, tipo1, tipo2, hp, ataque, defensa, velocidad, vidacompletaHP);
             pokemons.add(pokemon);
             System.out.println(pokemon);
 

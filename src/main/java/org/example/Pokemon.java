@@ -21,29 +21,23 @@ public class Pokemon {
                 ", nombre='" + nombre + '\'' +
                 ", tipo1='" + tipo1 + '\'' +
                 ", tipo2='" + tipo2 + '\'' +
-                ", total=" + total +
                 ", hp=" + hp +
                 ", ataque=" + ataque +
                 ", defensa=" + defensa +
                 ", velocidad=" + velocidad +
-                ", generacion=" + generacion +
-                ", esLegendario=" + esLegendario +
                 ", vidacompletaHP=" + vidacompletaHP +
                 '}';
     }
 
-    public Pokemon(int numero, String nombre, String tipo1, String tipo2, int total, int hp, int ataque, int defensa, int velocidad, int generacion, boolean esLegendario,int vidacompletaHP) {
+    public Pokemon(int numero, String nombre, String tipo1, String tipo2,int hp, int ataque, int defensa, int velocidad,int vidacompletaHP) {
         this.numero = numero;
         this.nombre = nombre;
         this.tipo1 = tipo1;
         this.tipo2 = tipo2;
-        this.total = total;
         this.hp = hp;
         this.ataque = ataque;
         this.defensa = defensa;
         this.velocidad = velocidad;
-        this.generacion = generacion;
-        this.esLegendario = esLegendario;
         this.vidacompletaHP = vidacompletaHP;
     }
 
