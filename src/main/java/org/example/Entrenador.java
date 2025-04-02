@@ -5,17 +5,10 @@ import java.util.List;
 public class Entrenador {
     private String nombre;
     private List<Pokemon> equipo;
+
     public Entrenador(String nombre, List<Pokemon> equipo) {
         this.nombre = nombre;
         this.equipo = equipo;
-    }
-
-    @Override
-    public String toString() {
-        return "Entrenador{" +
-                "nombre='" + nombre + '\'' +
-                ", equipo=" + equipo +
-                '}';
     }
 
     public List<Pokemon> mostrarEquipo() {
@@ -26,4 +19,12 @@ public class Entrenador {
         return equipo;
     }
 
+    // Las funciones especifica por orden dejalas al final
+    @Override
+    public String toString() {
+        return "Entrenador{" +
+                "nombre='" + nombre + '\'' +
+                ", equipo=" + equipo +
+                '}';
+    }
 }
